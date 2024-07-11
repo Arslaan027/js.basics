@@ -11,15 +11,23 @@
     <div id="mapid"></div>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
-        var map = L.map('mapid').setView([27.959463, 78.082660], 13); // Set initial view to the new location
+        var map = L.map('mapid').setView([27.959463, 78.082660], 13);
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
+        function success (pos) {
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+            console.log(lat, lng);
+        }
+        function error(err) {
+            console.warn(`ERROR(${err.code}): ${err.message}`);
+        }
+        navigator.geolocation.watchPosition(success, error);
+        
 
-        // Add a marker at the new location with a popup
-        L.marker([27.959463, 78.082660]).addTo(map)
-        .bindPopup('Environmental and Engineering Solution')
+
         L.marker([27.918733, 78.091695]).addTo(map)
         .bindPopup ('My home')
             
