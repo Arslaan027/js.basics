@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: url('https://source.unsplash.com/random/1920x1080/?clock,time') center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Bodoni Moda SC', serif;
+}
+
+#endDate {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.col {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.col div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 100px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    color: black;
+}
+
+#startBtn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+}
+
+#userEndDate {
+    height: 50px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    color: black;
+}
+
+.button-41 {
+    background-color: #00bd68;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 250px;
+    z-index: 9;
+    border: 0;
+}
+
+.button-41:hover {
+    background: #00a15a;
+}

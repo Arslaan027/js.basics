@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+#clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    gap: 30px;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    font-size: 30px;
+    text-align: center;
+}
